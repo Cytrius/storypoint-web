@@ -9,3 +9,4 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
+/angular/node_modules
