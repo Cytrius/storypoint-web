@@ -8,15 +8,17 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet">
+
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #333645;
                 color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
                 height: 100vh;
                 margin: 0;
             }
@@ -43,24 +45,33 @@
 
             .content {
                 text-align: center;
+                width:100%; background:rgba(0, 0, 0, 0.22);
             }
 
             .title {
                 font-size: 84px;
+                color:rgba(255, 255, 255, 0.9);
             }
 
             .links > a {
-                color: #636b6f;
+                color:rgba(255, 255, 255, 0.9);
                 padding: 0 25px;
                 font-size: 12px;
-                font-weight: 600;
+                font-weight: 300;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 22px;
+                margin-top: 11px;
+            }
+
+            .material-icons {
+                font-size:inherit;
+                position: relative;
+                top: 0.15em;
             }
         </style>
     </head>
@@ -78,16 +89,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="title m-b-md">   
+                    <i class="material-icons" style="color:#7898a2;">bubble_chart</i> 
+                    StoryPoint
                 </div>
             </div>
         </div>
