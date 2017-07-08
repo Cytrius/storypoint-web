@@ -8,64 +8,101 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #333645;
+                background-color: #ffffff;
                 color: #636b6f;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 300;
+                font-size:18px;
                 height: 100vh;
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
+            .top {
+                width:100%;
+                background-image: -webkit-linear-gradient(113deg, #55c18d, #4c9ab2 37%, #4169e1 83%, #4169e1 99%);
+                background-image: linear-gradient(337deg, #55c18d, #4c9ab2 37%, #4169e1 83%, #4169e1 99%);
             }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
+            .navigation {
+                max-width:980px;
+                margin:0 auto;
+                padding:1.5em 1em;
             }
 
-            .position-ref {
-                position: relative;
+            .float-left {
+                float:left;
+            }
+            .float-right {
+                float:right;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
+            .logo {
+                font-family: 'Ubuntu', sans-serif;
+                font-weight:bold;
+                font-size:1.55em;
+                color:#fff;
+                line-height:40px;
+                height:40px;
             }
-
-            .content {
-                text-align: center;
-                width:100%; background:rgba(0, 0, 0, 0.22);
+            .links {
+                line-height:40px;
+                font-size:1em;
+                word-spacing:2.5em;
+                height:40px;
             }
-
-            .title {
-                font-size: 84px;
-                color:rgba(255, 255, 255, 0.9);
-            }
-
-            .links > a {
-                color:rgba(255, 255, 255, 0.9);
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 300;
-                letter-spacing: .1rem;
+            .links>a {
+                color:#fff;
                 text-decoration: none;
-                text-transform: uppercase;
+                word-spacing:0.1em;
+            }
+            .links>a:not(.button):hover {
+                text-decoration: underline;
+            }
+            .links>.button {
+                background:rgba(255, 255, 255, 0.1);
+                padding:0.6em;
+                border-radius:0.25em;
+            }
+            .links>.button:hover {
+                background:rgba(255, 255, 255, 0.15);
             }
 
-            .m-b-md {
-                margin-bottom: 22px;
-                margin-top: 11px;
+            .masthead {
+                padding-top:9em;
+            }
+            .masthead h1 {
+                width:100%;
+                text-align:center;
+                color:#fff;
+                margin:0;
+                font-weight:bold;
+                font-size:2.3em;
+            }
+            .masthead h2 {
+                width:100%;
+                text-align:center;
+                color:#fff;
+                margin:0;
+                font-weight:300;
+                font-size:1.9em;
+                margin-top:0.25em;
+            }
+
+            .product-shot {
+                width:65%;
+                margin:0 auto;
+                padding-top:7em;
+            }
+            .product-shot img {
+                display:block;
             }
 
             .material-icons {
@@ -73,27 +110,75 @@
                 position: relative;
                 top: 0.15em;
             }
+
+            .content {
+                max-width:980px;
+                margin:0 auto;
+                padding:3em 1em;
+            }
+            .background {
+                background:#f5f7fd;
+                width:100%;
+            }
+
+            .content h3 {
+                color:#3a405a;
+                font-size:1.8em;
+                margin:0;
+            }
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
+        <div class="top">
+            <div class="navigation">
+                <div class="logo float-left">
+                    <i class="material-icons" style="color:#fff; font-size:1.1em">bubble_chart</i>
+                    storypoint
+                </div>
+                <div class="links float-right">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Support</a>
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <a class="button" href="{{ url('/register') }}">Try Free</a>
                         <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
                     @endif
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">   
-                    <i class="material-icons" style="color:#7898a2;">bubble_chart</i> 
-                    StoryPoint
-                </div>
+            </div>
+            <div class="masthead">
+                <h1>The best way to build software.</h1>
+                <h2>Insight for your business, process for your developers.</h2>
+            </div>
+            <div class="product-shot">
+                <img src="/img/product-shot.png">
             </div>
         </div>
+
+        <div class="content">
+            <h3>Features</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="background">
+            <div class="content">
+                <h3>Business</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Customer Service</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
     </body>
 </html>
