@@ -5,129 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Storypoint</title>
+
+       <link href="/dist/assets/semantic/semantic.min.css" rel="stylesheet">
 
         <!-- Fonts -->
        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
-
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #ffffff;
-                color: #636b6f;
-                font-family: 'Source Sans Pro', sans-serif;
-                font-weight: 300;
-                font-size:18px;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .top {
-                width:100%;
-                background-image: -webkit-linear-gradient(113deg, #55c18d, #4c9ab2 37%, #4169e1 83%, #4169e1 99%);
-                background-image: linear-gradient(337deg, #55c18d, #4c9ab2 37%, #4169e1 83%, #4169e1 99%);
-            }
-
-            .navigation {
-                max-width:980px;
-                margin:0 auto;
-                padding:1.5em 1em;
-            }
-
-            .float-left {
-                float:left;
-            }
-            .float-right {
-                float:right;
-            }
-
-            .logo {
-                font-family: 'Ubuntu', sans-serif;
-                font-weight:bold;
-                font-size:1.55em;
-                color:#fff;
-                line-height:40px;
-                height:40px;
-            }
-            .links {
-                line-height:40px;
-                font-size:1em;
-                word-spacing:2.5em;
-                height:40px;
-            }
-            .links>a {
-                color:#fff;
-                text-decoration: none;
-                word-spacing:0.1em;
-            }
-            .links>a:not(.button):hover {
-                text-decoration: underline;
-            }
-            .links>.button {
-                background:rgba(255, 255, 255, 0.1);
-                padding:0.6em;
-                border-radius:0.25em;
-            }
-            .links>.button:hover {
-                background:rgba(255, 255, 255, 0.15);
-            }
-
-            .masthead {
-                padding-top:9em;
-            }
-            .masthead h1 {
-                width:100%;
-                text-align:center;
-                color:#fff;
-                margin:0;
-                font-weight:bold;
-                font-size:2.3em;
-            }
-            .masthead h2 {
-                width:100%;
-                text-align:center;
-                color:#fff;
-                margin:0;
-                font-weight:300;
-                font-size:1.9em;
-                margin-top:0.25em;
-            }
-
-            .product-shot {
-                width:65%;
-                margin:0 auto;
-                padding-top:7em;
-            }
-            .product-shot img {
-                display:block;
-            }
-
-            .material-icons {
-                font-size:inherit;
-                position: relative;
-                top: 0.15em;
-            }
-
-            .content {
-                max-width:980px;
-                margin:0 auto;
-                padding:3em 1em;
-            }
-            .background {
-                background:#f5f7fd;
-                width:100%;
-            }
-
-            .content h3 {
-                color:#3a405a;
-                font-size:1.8em;
-                margin:0;
-            }
-
-        </style>
+        <link href="/css/index.css" rel="stylesheet">
     </head>
     <body>
         <div class="top">
@@ -137,11 +25,11 @@
                     storypoint
                 </div>
                 <div class="links float-right">
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Support</a>
+                    <a href="/#features">Features</a>
+                    <a href="/#pricing">Pricing</a>
+                    <a href="/#support">Support</a>
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a class="button" href="{{ url('/app') }}">Dashboard</a>
                     @else
                         <a class="button" href="{{ url('/register') }}">Try Free</a>
                         <a href="{{ url('/login') }}">Login</a>
@@ -149,36 +37,99 @@
                 </div>
             </div>
             <div class="masthead">
-                <h1>The best way to build software.</h1>
-                <h2>Insight for your business, process for your developers.</h2>
+                <h1>The Software Success Platform</h1>
+                <h2>How leading edge product teams <strong>plan</strong>, <strong>execute</strong>, and <strong>deliver</strong>.</h2>
+                <div class="text-align-center">
+                    <a href="/register" class="ui green button">
+                        Start Your 30-Day Trial
+                    </a>
+                    <a href="/#pricing" class="ui inverted basic button">
+                        See Pricing
+                    </a>
+                </div>
             </div>
             <div class="product-shot">
                 <img src="/img/product-shot.png">
             </div>
         </div>
 
-        <div class="content">
-            <h3>Features</h3>
-            <ul>
-                <li></li>
-            </ul>
+        <div class="content" id="features">
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <h3 class="ui header">Business Focused Product Plans</h3>
+                    <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                    <h3 class="ui header">Product Release Insight</h3>
+                    <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                </div>
+                <div class="six wide right floated column">
+                    <img src="/img/feature_1.png" class="ui large bordered rounded image">
+                </div>
+            </div>
         </div>
 
         <div class="background">
-            <div class="content">
-                <h3>Business</h3>
-                <ul>
-                    <li></li>
-                </ul>
+            <div class="content" style="max-width:700px">
+                <h3 class="ui header">Clearly Defined Business Goals</h3>
+                <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
             </div>
         </div>
 
         <div class="content">
-            <h3>Customer Service</h3>
-            <ul>
-                <li></li>
-            </ul>
+            <div class="ui grid">
+                <div class="six wide left floated column">
+                    <img src="/img/feature_2.png" class="ui large bordered rounded image">
+                </div>
+                <div class="eight wide column">
+                    <h3 class="ui header">Holistic Development Path</h3>
+                    <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                    <h3 class="ui header">Measurable Milestones</h3>
+                    <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                </div>
+            </div>
         </div>
+
+        <div class="background" id="pricing">
+            <div class="content" style="max-width:700px">
+                <h3 class="ui header">Pricing For Teams</h3>
+                <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            </div>
+        </div>
+
+        <div id="support">
+            <div class="content" style="max-width:700px">
+                <h3 class="ui header">Support</h3>
+                <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            </div>
+        </div>
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+              <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                  <h4 class="ui inverted header">About</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Sitemap</a>
+                    <a href="#" class="item">Contact Us</a>
+                    <a href="#" class="item">Religious Ceremonies</a>
+                    <a href="#" class="item">Gazebo Plans</a>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Services</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Banana Pre-Order</a>
+                    <a href="#" class="item">DNA FAQ</a>
+                    <a href="#" class="item">How To Access</a>
+                    <a href="#" class="item">Favorite X-Men</a>
+                  </div>
+                </div>
+                <div class="seven wide column">
+                  <h4 class="ui inverted header">Footer Header</h4>
+                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </body>
 </html>

@@ -1,0 +1,153 @@
+html, body {
+    background-color: #ffffff;
+    color: #636b6f;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size:18px;
+    height: 100vh;
+    margin: 0;
+}
+
+.top {
+    width:100%;
+    background: #2185d0;
+    min-height:100px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2185d0+0,4e92c9+97 */
+background: #2185d0; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #2185d0 0%, #4e92c9 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #2185d0 0%,#4e92c9 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #2185d0 0%,#4e92c9 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2185d0', endColorstr='#4e92c9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.navigation {
+    max-width:980px;
+    margin:0 auto;
+    padding:1.5em 1em;
+}
+
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+
+.logo {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    font-size:1.55em;
+    color:#fff;
+    line-height:40px;
+    height:40px;
+}
+a.logo {
+    color:#fff;
+    text-decoration: none;
+}
+a.logo:hover {
+    color:#fff;
+    text-decoration: none;
+    cursor:pointer; 
+}
+.links {
+    line-height:40px;
+    font-size:1em;
+    word-spacing:2.5em;
+    height:40px;
+}
+.links>a {
+    color:#fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    word-spacing:0.1em;
+}
+.links>a:not(.button):hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+.links>.button {
+    background:rgba(255, 255, 255, 0.1);
+    padding:0.6em;
+    border-radius:0.25em;
+}
+.links>.button:hover {
+    background:rgba(255, 255, 255, 0.15);
+}
+
+.masthead {
+    padding-top:7em;
+}
+.masthead h1 {
+    width:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
+    color:#fff;
+    margin:0;
+    font-weight:bold;
+    font-size:2.3em;
+}
+.masthead h2 {
+    width:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
+    color:#fff;
+    margin:0;
+    font-weight:300;
+    font-size:1.8em;
+    margin-top:0.25em;
+}
+
+.masthead .ui.button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.product-shot {
+    width:900px;
+    margin:0 auto;
+    padding-top:5em;
+}
+.product-shot img {
+    display:block;
+    max-width:900px;
+}
+
+.material-icons {
+    font-size:inherit;
+    position: relative;
+    top: 0.15em;
+}
+
+.content {
+    max-width:980px;
+    margin:0 auto;
+    padding:5em 1em;
+}
+.content.yield {
+    padding:2em 1em;
+}
+.background {
+    background:#f5f7fd;
+    width:100%;
+}
+
+.content h3.header {
+    color:#3a405a;
+    font-size:1.3em;
+
+}
+
+.content p {
+    font-size:1.1em;
+}
+
+.text-align-center {
+    text-align:center;
+    padding-top:1em;
+}
+
+.footer.inverted.segment {
+  padding: 5em 0em;
+  background:#1678c2;
+}
