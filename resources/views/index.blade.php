@@ -41,7 +41,7 @@
                 <h2>How leading edge product teams <strong>plan</strong>, <strong>execute</strong>, and <strong>deliver</strong>.</h2>
                 <div class="text-align-center">
                     <a href="/register" class="ui green button">
-                        Start Your 30-Day Trial
+                        Get Started For Free
                     </a>
                     <a href="/#pricing" class="ui inverted basic button">
                         See Pricing
@@ -56,9 +56,9 @@
         <div class="content" id="features">
             <div class="ui grid">
                 <div class="eight wide column">
-                    <h3 class="ui header">Business Focused Product Plans</h3>
+                    <h3 class="ui header">Product Vision</h3>
                     <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-                    <h3 class="ui header">Product Release Insight</h3>
+                    <h3 class="ui header">Product Strategy</h3>
                     <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
                 </div>
                 <div class="six wide right floated column">
@@ -80,7 +80,7 @@
                     <img src="/img/feature_2.png" class="ui large bordered rounded image">
                 </div>
                 <div class="eight wide column">
-                    <h3 class="ui header">Holistic Development Path</h3>
+                    <h3 class="ui header">Holistic Product Roadmap</h3>
                     <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
                     <h3 class="ui header">Measurable Milestones</h3>
                     <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
@@ -92,6 +92,66 @@
             <div class="content" style="max-width:700px">
                 <h3 class="ui header">Pricing For Teams</h3>
                 <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+
+                <div class="ui cards two">
+                    <div class="ui card">
+                        <div class="content">
+                            <div class="header center aligned">Free</div>
+                            <div class="meta center aligned">Individual Plan</div>
+                            <div class="ui divider horizontal">$0 / month</div>
+                            <div class="ui list">
+                              <div class="item"><i class="icon checkmark"></i> <div class="content">
+                                <b>1</b> product
+                              </div></div>
+                              <div class="item"><i class="icon checkmark"></i> <div class="content">
+                                <b>Unlimited</b> projects
+                              </div></div>
+                              <div class="item"><i class="icon checkmark"></i> <div class="content">
+                                <b>2</b> users
+                              </div></div>
+                              <div class="item"><i class="icon checkmark"></i> <div class="content">
+                                <b>Email</b> support
+                              </div></div>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="/register" class="ui basic button fluid grey">Register For Free</a>
+                        </div>
+                    </div>
+                    <div class="ui card">
+                        <div class="content">
+                            <a class="ui label left corner blue">
+                              <i class="icon plus"></i>
+                            </a>
+                            <div class="header center aligned">Premium</div>
+                            <div class="meta center aligned">Business Plan</div>
+                            <div class="ui divider horizontal">$5 / user / month</div>
+                            <div class="ui list">
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Unlimited</b> products
+                              </div></div>
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Unlimited</b> projects
+                              </div></div>
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Unlimited</b> users
+                              </div></div>
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Live Chat</b> support
+                              </div></div>
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Unlimited</b> Integrations
+                              </div></div>
+                              <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                                <b>Data</b> import &amp; export
+                              </div></div>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="/register" class="ui button fluid blue">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -102,34 +162,8 @@
             </div>
         </div>
 
-        <div class="ui inverted vertical footer segment">
-            <div class="ui container">
-              <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="three wide column">
-                  <h4 class="ui inverted header">About</h4>
-                  <div class="ui inverted link list">
-                    <a href="#" class="item">Sitemap</a>
-                    <a href="#" class="item">Contact Us</a>
-                    <a href="#" class="item">Religious Ceremonies</a>
-                    <a href="#" class="item">Gazebo Plans</a>
-                  </div>
-                </div>
-                <div class="three wide column">
-                  <h4 class="ui inverted header">Services</h4>
-                  <div class="ui inverted link list">
-                    <a href="#" class="item">Banana Pre-Order</a>
-                    <a href="#" class="item">DNA FAQ</a>
-                    <a href="#" class="item">How To Access</a>
-                    <a href="#" class="item">Favorite X-Men</a>
-                  </div>
-                </div>
-                <div class="seven wide column">
-                  <h4 class="ui inverted header">Footer Header</h4>
-                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        @component('components/footer');
+        @endcomponent
 
     </body>
 </html>

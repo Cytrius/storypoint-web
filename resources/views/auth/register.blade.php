@@ -3,7 +3,7 @@
 @section('content')
     <div class="ui header" style="text-align:center">
         Register For Free
-        <span class="sub header">Start your 30-day free trial today!</span>
+        <span class="sub header">Get started today, grow your team later.</span>
     </div>
     <div class="ui divider"></div>
     <div class="ui container" style="max-width:320px !important">
