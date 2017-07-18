@@ -1,0 +1,47 @@
+<div class="ui cards">
+
+    <div *ngFor="let project of projects" class="ui link card">
+        <div class="content">
+            <span class="right floated">
+                <span class="ui small {{ project.status_color }} icon label">
+                    {{ project.status }}
+                </span>
+            </span>
+            <a class="header">
+                {{ project.title }}
+            </a>
+            <div class="meta">
+                Created {{ project.created_at }}
+            </div>
+            <div class="description">
+                {{ project.description }}
+            </div>
+        </div>
+        <div class="extra content">
+            <a>
+                <i class="material-icons icon">lightbulb_outline</i>
+                {{ project.requirements_count }} Requirements
+            </a>
+            <a class="right floated">
+                <i class="material-icons icon">perm_identity</i>
+                {{ project.resource_count }} Resources
+            </a>
+        </div>
+        <div class="extra content">
+            <span>
+                <i class="material-icons icon">access_time</i>
+                Due July 30, 2017
+            </span>
+            <span class="right floated">
+                <i *ngIf="project.health === 'On Track'" class="material-icons icon">trending_up</i>
+                <i *ngIf="project.health === 'Behind'" class="material-icons icon">trending_down</i>
+                <i *ngIf="project.health === 'Done'" class="material-icons icon">trending_flat</i>
+                {{ project.health }}
+            </span>
+        </div>
+        <div class="ui bottom attached indicating progress" [attr.data-value]="project.progress" data-total="100">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+</div>

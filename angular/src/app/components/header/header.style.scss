@@ -1,0 +1,40 @@
+.ui.menu {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2185d0+0,4e92c9+97 */
+	background: #2185d0; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #2185d0 0%, #4e92c9 97%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #2185d0 0%,#4e92c9 97%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #2185d0 0%,#4e92c9 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2185d0', endColorstr='#4e92c9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    z-index: 99;
+    box-shadow:0px 1px 1px 1px #1a649c;
+
+
+    .header.item {
+        min-width:252px;
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:bold;
+        font-size:1.55em;
+        color:#fff;
+        line-height:40px;
+        height:40px;
+    }
+    a.logo {
+        color:#fff;
+        text-decoration: none;
+    }
+    a.logo:hover {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .material-icons {
+        font-size:inherit;
+        position: relative;
+        top: 0.15em;
+    }
+
+}

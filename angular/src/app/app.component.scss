@@ -178,10 +178,19 @@ input::selection {
 /*******************************
         Global Overrides
 *******************************/
+/deep/ .container {
+    margin-top: 66px;
+    margin-left: 252px;
+    z-index: 1;
+    padding: 1em;
+}
 
-
-
-/*******************************
-         Site Overrides
-*******************************/
-
+/deep/ .material-icons.icon {
+    font-family: 'Material Icons' !important;
+    vertical-align: bottom;
+    display:inline;
+    font-size: inherit;
+    position:static;
+    line-height:inherit;
+    margin:0 0.5em 0 0 !important;
+}

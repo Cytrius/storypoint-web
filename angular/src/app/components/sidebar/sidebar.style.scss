@@ -1,0 +1,27 @@
+.ui.menu {
+    margin-top:66px;
+    z-index:1;
+}
+
+.ui.menu .item {
+	padding-top: 1.4em;
+    padding-bottom: 1.4em;
+}
+
+.ui.menu .item .icon {
+	float:left;
+	margin-right:1em !important;
+}
+
+.ui.menu .sub.menu {
+	margin-bottom: -1.4em;
+    margin-top: 1.4em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    .item {
+    	border-left: 1px solid #f3f3f3 !important;
+    }
+}

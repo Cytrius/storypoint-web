@@ -18,3 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/app', 'AppController@index')->name('app');
+Route::get('/app/{a?}/{b?}/{c?}/{d?}', 'AppController@index')->name('app');

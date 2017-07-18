@@ -1,8 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular",
-    "ejected": true
+    "name": "angular"
   },
   "apps": [
     {
@@ -27,8 +26,7 @@
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js",
-        "assets/semantic/semantic.min.js"
+
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
