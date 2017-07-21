@@ -9,6 +9,6 @@
 			<div class="sub header">Overview of all projects and their current state</div>
 		</h1>
 		<div class="ui hidden divider"></div>
-		<project-cards [projects]="projects"></project-cards>
+		<project-cards (click)="showProject()" [projects]="projects"></project-cards>
 	</div>
 </div>

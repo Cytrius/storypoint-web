@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -69,8 +70,13 @@ export class DashboardView {
 
 	constructor(
 		private element:ElementRef,
-
+		private router:Router
 	) {
+	}
+
+	public showProject() {
+		console.log('showProject()');
+		this.router.navigate(['app', 'project']);
 	}
 
 

@@ -1,0 +1,97 @@
+<header></header>
+
+<sidebar></sidebar>
+
+<div class="container">
+	<div class="ui basic segment">
+
+		<project-header 
+			[pageTitle]="'Project Requirements'" 
+			[project]="project">
+		</project-header>
+
+		<ng-template ngFor let-requirement [ngForOf]="requirements" let-index="index">
+
+			<div class="ui requirement padded segment"
+				[attr.requirement-index]="index"
+				[class.stacked]="requirement.task_count > 1"
+				[class.tall]="requirement.task_count > 5">
+
+				<div class="ui top attached indicating progress" 
+					[attr.data-value]="requirement.progress" 
+					data-total="100">
+			    	<div class="bar"></div>
+			  	</div>
+
+				<div class="ui right floated secondary menu">
+					<a class="item" (click)="toggleTasks(index)"><i class="material-icons icon">playlist_add_check</i> {{ requirement.task_count }} Tasks</a>
+					<a class="item"><i class="material-icons icon">chat_bubble_outline</i> 3 Comments</a>
+					<a class="item"><i class="material-icons icon">create</i> Edit</a>
+				</div>
+
+				<h3 class="ui left floated header">
+					<i class="material-icons icon">lightbulb_outline</i>
+					<div class="content">
+						{{ requirement.title }}
+						<div class="sub header">Assigned to Kevin Langlois</div>
+					</div>
+				</h3>
+
+				<div class="clear"></div>
+
+				<p>As a {{requirement.actor}}, I want {{ requirement.function}} so that {{ requirement.outcome }}.</p>
+
+			</div>
+
+			<div class="tasks" [attr.requirement-index]="index">
+
+				<div *ngFor="let task of requirement.tasks" 
+					class="ui task segment">
+
+					<div class="right floated actions">
+						<span class="ui inverted basic grey label">{{ task.type }}</span>
+						<span class="ui {{ task.status_color }} label">{{ task.status }}</span>
+						<a class="ui small basic edit icon button"><i class="material-icons icon">create</i> Edit</a>
+					</div>
+
+					<p>
+						<i *ngIf="task.type === 'functional'" class="material-icons icon">code</i>
+						<i *ngIf="task.type === 'design'" class="material-icons icon">palette</i>
+						<i *ngIf="task.type === 'administrative'" class="material-icons icon">build</i>
+
+						{{ task.description }}
+					</p>
+
+				</div>
+
+				<div class="ui ghost segment">
+
+					<span class="ui large basic label">+ Add Task</span>
+
+					<p>&nbsp;</p>
+
+				</div>
+
+			</div>
+
+		</ng-template>
+
+		<div class="ui padded ghost segment">
+
+			<span class="ui large basic label">+ Add Requirement</span>
+
+			<h3 class="ui left floated header">
+				<div class="content">
+					&nbsp;
+					<div class="sub header">&nbsp;</div>
+				</div>
+			</h3>
+
+			<div class="clear"></div>
+
+			<p>&nbsp;</p>
+
+		</div>
+
+	</div>
+</div>

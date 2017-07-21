@@ -1,0 +1,37 @@
+
+.ui.divider {
+	clear:both;
+}
+
+.ui.dividing.header:not(:first-child) {
+	margin-top:2em;
+}
+
+.ui.progress {
+	margin-top:1em;
+}
+
+.ui.segment {
+	margin-bottom: 2em;
+	h2.ui.header {
+		margin-bottom: 1.3em;
+	}
+}
+
+.ui.secondary.menu {
+	position:relative;
+	top:-5px;
+}
+
+.ui.edit.button {
+	position:absolute;
+	right:3em;
+	top:3em;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #555;
+}

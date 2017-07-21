@@ -1,0 +1,77 @@
+.ui.dividing.header:not(:first-child) {
+	margin-top:2em;
+}
+
+.ui.segment {
+	h2.ui.header {
+		margin-bottom: 1.3em;
+	}
+}
+
+.ui.secondary.menu {
+	position:relative;
+	top:-5px;
+}
+
+.ui.requirement.segment {
+
+	margin-top:2em;
+
+	.ui.edit.button {
+		position:absolute;
+		right:3em;
+		top:3em;
+	}
+
+	p {
+	    font-size: 15px;
+	    font-weight: 300;
+	    line-height: 1.8;
+	    color: #555;
+	    padding-left: 2.8em;
+	}
+}
+
+.ui.ghost.segment {
+	margin-top:2em;
+}
+.tasks .ui.ghost.segment {
+	margin-top:1em;
+}
+
+.tasks {
+	margin-bottom:2em;
+	display:none;
+}
+
+.ui.task.segment {
+
+	box-shadow:none;
+	margin: 0 0 1em 0;
+	background:rgba(255, 255, 255, 0.8);
+
+	.ui.edit.button {
+		font-size: .85714286rem;
+		line-height: 1;
+		margin: 0 .14285714em;
+		padding: .5833em .833em;
+		font-weight: 700;
+	}
+
+	.ui.right.floated.label {
+		float:right;
+	}
+
+	.right.floated.actions {
+		float:right;
+
+	}
+
+	p {
+	    font-size: 15px;
+	    font-weight: 300;
+	    line-height: 1.8;
+	    color: #555;
+	    margin:0;
+	}
+}

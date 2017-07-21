@@ -1,0 +1,50 @@
+
+.ui.divider {
+	clear:both;
+}
+
+.ui.dividing.header:not(:first-child) {
+	margin-top:2em;
+}
+
+.ui.progress {
+	margin-top:1em;
+}
+
+.ui.progress:not(.indicating) {
+	.bar {
+		background:#c1c1c1;
+	}
+	.bar::after {
+		animation:none;
+	}
+}
+
+.ui.segment {
+	margin-bottom: 2em;
+	h2.ui.header {
+		margin-bottom: 1.3em;
+	}
+}
+
+.ui.right.floated.label {
+	float:right;
+}
+
+.ui.secondary.menu {
+	position:relative;
+	top:-5px;
+}
+
+.ui.edit.button {
+	position:absolute;
+	right:3em;
+	top:3em;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #555;
+}

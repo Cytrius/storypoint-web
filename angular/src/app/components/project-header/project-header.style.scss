@@ -1,0 +1,28 @@
+.status.label {
+    float:right;
+}
+.health {
+    float: right;
+    margin-right:0.5em !important;
+}
+h1.ui.header {
+    float:left;
+    a { color: rgba(0,0,0,.87); }
+}
+
+.project.status {
+    float:right;
+
+    .ui.progress {
+        clear:both;
+        margin-top:0.5em;
+    }
+}
+
+.ui.menu {
+    margin-bottom:2em;
+}
+
+.ui.secondary.menu {
+    margin: 1.5em 0 2em 0;
+}

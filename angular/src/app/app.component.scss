@@ -178,19 +178,60 @@ input::selection {
 /*******************************
         Global Overrides
 *******************************/
-/deep/ .container {
-    margin-top: 66px;
-    margin-left: 252px;
-    z-index: 1;
-    padding: 1em;
-}
+/deep/ {
+  .clear { clear:both; }
+  
+  .container {
+      margin-top: 66px;
+      margin-left: 252px;
+      z-index: 1;
+      padding: 1em;
+  }
 
-/deep/ .material-icons.icon {
-    font-family: 'Material Icons' !important;
-    vertical-align: bottom;
-    display:inline;
-    font-size: inherit;
-    position:static;
-    line-height:inherit;
-    margin:0 0.5em 0 0 !important;
+  .material-icons.icon {
+      font-family: 'Material Icons' !important;
+      vertical-align: bottom;
+      display:inline;
+      font-size: inherit;
+      position:static;
+      line-height:inherit;
+      margin:0 0.5em 0 0 !important;
+  }
+
+  .ui.left.floated {
+    float:left;
+  }
+  .ui.right.floated {
+    float:right;
+  }
+
+  .ui.avatar.bordered.image {
+    margin-right:0.5em;
+    border:1px solid rgba(255,255,255,.3);
+  }
+
+  .ui.secondary.menu {
+    .icon.item {
+      .icon {
+        margin:0 !important;
+      }
+    }
+  }
+
+  .ui.ghost.segment {
+    opacity:0.3;
+    border:2px dashed #bbb;
+    .ui.label {
+      position:absolute;
+      top:50%;
+      right:50%;
+      transform: translate(50%, -50%);
+      border:none;
+    }
+    &:hover {
+      opacity:0.6;
+      cursor:pointer;
+    }
+  }
+
 }

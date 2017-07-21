@@ -1,0 +1,48 @@
+<header></header>
+
+<sidebar></sidebar>
+
+<div class="container">
+	<div class="ui basic segment">
+
+		<project-header 
+			[pageTitle]="'Project Resources'" 
+			[project]="project">
+		</project-header>
+
+		<div *ngFor="let resource of resources" class="ui padded segment">
+
+			<div class="ui top attached indicating progress" [attr.data-value]="project.progress" data-total="100">
+				<div class="bar">
+				</div>
+			</div>	
+
+			<div class="ui right floated secondary menu">
+				<a class="item" (click)="toggleTasks(index)"><i class="material-icons icon">playlist_add_check</i> 20 Tasks</a>
+				<a class="item"><i class="material-icons icon">chat_bubble_outline</i> 3 Comments</a>
+				<a class="item"><i class="material-icons icon">create</i> Edit</a>
+			</div>
+
+			<img class="ui left floated tiny circular bordered image" src="{{ resource.avatar }}">
+
+			<div class="ui left floated">
+
+				<h3 class="ui  header">
+					<div class="content">
+						{{ resource.name }}
+						<div class="sub header">{{ resource.title }}</div>
+					</div>
+				</h3>
+
+				<p>{{ resource.skills }}</p>
+
+			</div>			
+
+			<div class="clear"></div>
+
+		</div>
+
+
+		
+	</div>
+</div>
