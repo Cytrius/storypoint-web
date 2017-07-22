@@ -11,7 +11,7 @@ export class DashboardView {
 
 	public projects = [
 		{
-			title:'Homepage',
+			title:'Performance 2.0',
 			created_at:'May 16, 2017',
 			description:'Landing page for the storypoint website - big bold cta',
 			status:'Complete',
@@ -22,7 +22,7 @@ export class DashboardView {
 			health:'Done'
 		},
 		{
-			title:'Project Dashboard',
+			title:'Roles and Permissions',
 			created_at:'March 23, 2017',
 			description:'Initial landing page with project cards',
 			status:'In Progress',
@@ -33,7 +33,7 @@ export class DashboardView {
 			health:'On Track'
 		},
 		{
-			title:'Business Brief Editor',
+			title:'Payment and Billing',
 			created_at:'June 1, 2017',
 			description:'WYSIWYG editor for document style requirements writing',
 			status:'Aproved',
@@ -44,7 +44,7 @@ export class DashboardView {
 			health:'On Track'
 		},
 		{
-			title:'Reports',
+			title:'Notification Center',
 			created_at:'June 1, 2017',
 			description:'Reporting section with lots of big charts and graphs',
 			status:'Planning',
@@ -55,7 +55,7 @@ export class DashboardView {
 			health:'On Track'
 		},
 		{
-			title:'User Management',
+			title:'Time Off 2.0',
 			created_at:'June 1, 2017',
 			description:'Manage, assign, invite, and delegate resources',
 			status:'Planning',
@@ -76,7 +76,7 @@ export class DashboardView {
 
 	public showProject() {
 		console.log('showProject()');
-		this.router.navigate(['app', 'project']);
+		this.router.navigate(['app', 'projects', 'overview']);
 	}
 
 

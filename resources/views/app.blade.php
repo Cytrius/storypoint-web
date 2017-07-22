@@ -25,6 +25,11 @@
 
    <style>
         body { background:#f6f8fa !important; }
+
+        .ui.app-loader {
+            width:100%;
+            height:100%;
+        }
    </style>
 </head>
 <body>

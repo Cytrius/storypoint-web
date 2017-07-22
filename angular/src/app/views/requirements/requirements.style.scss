@@ -38,10 +38,13 @@
 .tasks .ui.ghost.segment {
 	margin-top:1em;
 }
-
+.tasks .ui.ghost.segment:first-child {
+	margin-top:0em;
+}
 .tasks {
 	margin-bottom:2em;
 	display:none;
+	padding:0 1em;
 }
 
 .ui.task.segment {

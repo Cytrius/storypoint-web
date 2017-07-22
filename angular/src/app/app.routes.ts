@@ -9,13 +9,16 @@ import { ResourcesView } from './views/resources/resources.view';
 import { DiscussionView } from './views/discussion/discussion.view';
 
 const routes: Routes = [
- 	{ path: 'app', redirectTo: 'app/dashboard' },
-	{ path: 'app/dashboard',  component: DashboardView},
-	{ path: 'app/project', component: ProjectView},
-	{ path: 'app/progress', component: ProgressView},
-	{ path: 'app/requirements', component: RequirementsView},
-	{ path: 'app/resources', component: ResourcesView},
-	{ path: 'app/discussion', component: DiscussionView}
+ 	{ path: 'app', redirectTo: 'app/projects/dashboard' },
+ 	{ path: 'app/projects', children:[
+ 		{ path: '',  redirectTo: 'dashboard', pathMatch: 'full'},
+		{ path: 'dashboard',  component: DashboardView},
+		{ path: 'overview', component: ProjectView},
+		{ path: 'progress', component: ProgressView},
+		{ path: 'requirements', component: RequirementsView},
+		{ path: 'resources', component: ResourcesView},
+		{ path: 'discussion', component: DiscussionView}
+ 	]}
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

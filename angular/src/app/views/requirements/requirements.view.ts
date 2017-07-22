@@ -31,7 +31,7 @@ export class RequirementsView {
 			outcome:'I can better understand the big picture',
 			status_color:'green',
 			progress:100,
-			task_count:3
+			task_count:0
 		},
 		{ 
 			title:'Card Filtering & Sorting',

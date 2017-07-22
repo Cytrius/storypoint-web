@@ -6,27 +6,27 @@
 <div class="clear"></div>
 
 <div class="ui five item menu">
-	<a class="item" [routerLink]="['/app', 'project']" [routerLinkActive]="'active'">
+	<a class="item" [routerLink]="['/app', 'projects', 'overview']" [routerLinkActive]="'active'">
 		<i class="material-icons icon">assignment</i>
 		Overview
 	</a>
 
-	<a class="item" [routerLink]="['/app', 'progress']" [routerLinkActive]="'active'">
+	<a class="item" [routerLink]="['/app', 'projects', 'progress']" [routerLinkActive]="'active'">
 		<i class="material-icons icon">timeline</i>
         Progress
 	</a>
 
-	<a class="item" [routerLink]="['/app', 'requirements']" [routerLinkActive]="'active'">
+	<a class="item" [routerLink]="['/app', 'projects', 'requirements']" [routerLinkActive]="'active'">
 		<i class="material-icons icon">lightbulb_outline</i>
 		{{ project.requirements_count }} Requirements
 	</a>
 
-	<a class="item" [routerLink]="['/app', 'resources']" [routerLinkActive]="'active'">
+	<a class="item" [routerLink]="['/app', 'projects', 'resources']" [routerLinkActive]="'active'">
 		<i class="material-icons icon">perm_identity</i>
         {{ project.resource_count }} Resources
 	</a>
 
-	<a class="item" [routerLink]="['/app', 'discussion']" [routerLinkActive]="'active'">
+	<a class="item" [routerLink]="['/app', 'projects', 'discussion']" [routerLinkActive]="'active'">
 		<i class="material-icons icon">perm_identity</i>
         {{ project.comment_count }} Comments
 	</a>
