@@ -11,6 +11,7 @@ declare var $:any;
 export class ProjectCardsComponent {
 
 	@Input() projects:any;
+	@Input() showAddNew:boolean;
 
 	constructor(
 		private element:ElementRef,

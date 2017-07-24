@@ -217,8 +217,28 @@ input::selection {
       }
     }
   }
+  .ui.dropdown .scrolling.menu {
+    border-top:none;
+  }
+  
 
-  .ui.ghost.segment {
+  *:focus {
+      outline: none !important;
+  }
+
+  .ui.menu .dropdown.item .menu.left {
+    flex-direction: column !important;
+  }
+
+  .ui.menu .item:not(.active) .sub.menu {
+    display:none;
+  }
+
+  .ui.basic.label {
+    color:#555;
+  }
+
+  .ui.ghost.segment,  .ui.ghost.card {
     opacity:0.3;
     border:2px dashed #bbb;
     .ui.label {
@@ -227,6 +247,8 @@ input::selection {
       right:50%;
       transform: translate(50%, -50%);
       border:none;
+      width: 100%;
+      text-align: center;
     }
     &:hover {
       opacity:0.6;

@@ -12,12 +12,20 @@ import { routing }     from './app.routes';
 import { AppComponent } from './app.component';
 
 // Views
-import { DashboardView } from './views/dashboard/dashboard.view';
-import { ProjectView } from './views/project/project.view';
+import { ProjectsView } from './views/projects/projects.view';
+import { OverviewView } from './views/overview/overview.view';
 import { ProgressView } from './views/progress/progress.view';
 import { RequirementsView } from './views/requirements/requirements.view';
 import { ResourcesView } from './views/resources/resources.view';
 import { DiscussionView } from './views/discussion/discussion.view';
+import { BudgetsView } from './views/budgets/budgets.view';
+import { BugsView } from './views/bugs/bugs.view';
+import { FeedbackView } from './views/feedback/feedback.view';
+import { PersonalView } from './views/personal/personal.view';
+import { ReportsView } from './views/reports/reports.view';
+import { SettingsView } from './views/settings/settings.view';
+import { SprintsView } from './views/sprints/sprints.view';
+import { TeamView } from './views/team/team.view';
 
 // Component
 import { HeaderComponent } from './components/header/header.component';
@@ -31,12 +39,20 @@ import { ProjectHeaderComponent } from './components/project-header/project-head
     AppComponent,
     
     // Views
-    DashboardView,
-    ProjectView,
+    ProjectsView,
+    OverviewView,
     ProgressView,
     RequirementsView,
     ResourcesView,
     DiscussionView,
+    BudgetsView,
+    BugsView,
+    FeedbackView,
+    PersonalView,
+    ReportsView,
+    SettingsView,
+    SprintsView,
+    TeamView,
 
     // Components
     HeaderComponent,

@@ -1,0 +1,97 @@
+<header></header>
+
+<sidebar></sidebar>
+
+<div class="container">
+  <div class="ui basic segment">
+
+	<div class="right floated filter-sort">
+
+<div class="ui small dropdown labeled icon button">
+  <i class="puzzle icon"></i>
+  <span class="text">All Components</span>
+  <div class="menu">
+    <div class="ui icon search input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Search components...">
+    </div>
+    <div class="scrolling menu">
+      <div class="item">
+        Feedback Screen
+      </div>
+      <div class="item">
+        Global Filtering
+      </div>
+      <div class="item">
+        Voting Page
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui small dropdown labeled icon button">
+  <i class="list layout icon"></i>
+  <span class="text">Most Votes</span>
+  <div class="menu">
+		<div class="item">
+        Most Votes
+      </div>
+      <div class="item">
+        Least Votes
+      </div>
+      <div class="item">
+        Newest
+      </div>
+      <div class="item">
+        Oldest
+      </div>
+
+  </div>
+</div>
+
+	</div>
+
+	<h1 class="ui left floated header">
+	  Feedback
+	  <div class="sub header">Feature suggestions and change requests</div>
+	</h1>
+
+  	<div class="clear"></div>
+
+	<div class="ui huge transparent icon input">
+		<input type="text" placeholder="Search existing feedback or create a new one...">
+		<i class="search icon"></i>
+	</div>
+
+	<div *ngFor="let item of feedback; let index = index;" 
+		class="ui feedback segment" [attr.data-feedback-index]="index" (click)="showDetails(index)">
+
+		<div class="right floated actions">
+			<span class="ui  basic  icon label component">
+				<i class="puzzle icon"></i>
+				{{ item.component }}
+			</span>
+			<a class="ui basic label votes">
+				<i class="heart icon" [class.red]="item.voted" [class.grey]="!item.voted"></i> {{ item.vote_count }}
+			</a>
+			<a class="ui small basic edit icon button"><i class="material-icons icon">create</i> Edit</a>
+		</div>
+
+		<p>
+			<i *ngIf="item.type === 'functional'" class="material-icons icon">code</i>
+			<i *ngIf="item.type === 'design'" class="material-icons icon">palette</i>
+			<i *ngIf="item.type === 'administrative'" class="material-icons icon">build</i>
+
+			{{ item.description }}
+		</p>
+
+    <p class="details">
+      {{ item.details }}
+      <br/><br/>
+      <img class="ui avatar bordered image" src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/7/000/224/1c5/022c4e6.jpg"><span>Kevin Langlois</span>
+    </p>
+
+	</div>
+
+  </div>
+</div>

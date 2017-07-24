@@ -1,0 +1,52 @@
+<header></header>
+
+<sidebar></sidebar>
+
+<div class="container">
+	<div class="ui basic segment">
+
+	<div class="right floated filter-sort">
+
+<div class="ui small dropdown labeled icon button">
+  <i class="filter icon"></i>
+  <span class="text">All Statuses</span>
+  <div class="menu">
+      <div class="item">
+        Complete
+      </div>
+      <div class="item">
+        In Progress
+      </div>
+      <div class="item">
+        Approved
+      </div>
+      <div class="item">
+        Planning
+      </div>
+  </div>
+</div>
+
+<div class="ui small dropdown labeled icon button">
+  <i class="list layout icon"></i>
+  <span class="text">Status</span>
+  <div class="menu">
+      <div class="item">
+        Newest
+      </div>
+      <div class="item">
+        Oldest
+      </div>
+
+  </div>
+</div>
+
+	</div>
+
+		<h1 class="ui left floated header">
+			Projects
+			<div class="sub header">Overview of all projects and their current state</div>
+		</h1>
+		<div class="ui hidden clear divider"></div>
+		<project-cards [projects]="projects" [showAddNew]="true"></project-cards>
+	</div>
+</div>

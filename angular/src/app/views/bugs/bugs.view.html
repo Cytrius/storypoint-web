@@ -1,0 +1,112 @@
+<header></header>
+
+<sidebar></sidebar>
+
+<div class="container">
+  <div class="ui basic segment">
+
+	<div class="right floated filter-sort">
+
+<div class="ui small dropdown labeled icon button">
+  <i class="puzzle icon"></i>
+  <span class="text">All Components</span>
+  <div class="menu">
+    <div class="ui icon search input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Search components...">
+    </div>
+    <div class="scrolling menu">
+      <div class="item">
+        Feedback Screen
+      </div>
+      <div class="item">
+        Global Filtering
+      </div>
+      <div class="item">
+        Voting Page
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui small dropdown labeled icon button">
+  <i class="warning sign icon"></i>
+  <span class="text">All Severity</span>
+  <div class="menu">
+    <div class="item">
+        Critical
+      </div>
+      <div class="item">
+        High
+      </div>
+      <div class="item">
+        Medium
+      </div>
+      <div class="item">
+        Low
+      </div>
+
+  </div>
+</div>
+
+<div class="ui small dropdown labeled icon button">
+  <i class="list layout icon"></i>
+  <span class="text">Highest Occurence</span>
+  <div class="menu">
+		<div class="item">
+        Highest Occurence
+      </div>
+      <div class="item">
+        Lowest Occurence
+      </div>
+      <div class="item">
+        Newest
+      </div>
+      <div class="item">
+        Oldest
+      </div>
+
+  </div>
+</div>
+
+	</div>
+
+	<h1 class="ui left floated header">
+		Bugs
+		<div class="sub header">External bug and internal defect tracking</div>
+	</h1>
+
+  	<div class="clear"></div>
+
+	<div class="ui huge transparent icon input">
+		<input type="text" placeholder="Search existing bugs or create a new one...">
+		<i class="search icon"></i>
+	</div>
+
+	<div *ngFor="let bug of bugs" 
+		class="ui bug {{ bug.severity_color }} segment">
+
+		<div class="right floated actions">
+			<span class="ui  basic  icon label component">
+				<i class="puzzle icon"></i>
+				{{ bug.component }}
+			</span>
+			<span class="ui {{ bug.severity_color }} label severity">{{ bug.severity }}</span>
+			<a class="ui basic label occurrence">
+				<i class="bug icon" [class.green]="bug.occurred" [class.grey]="!bug.occurred"></i> {{ bug.occurrence_count }}
+			</a>
+			<a class="ui small basic edit icon button"><i class="material-icons icon">create</i> Edit</a>
+		</div>
+
+		<p>
+			<i *ngIf="bug.type === 'bug'" class="material-icons icon">report_problem</i>
+			<i *ngIf="bug.type === 'design'" class="material-icons icon">palette</i>
+			<i *ngIf="bug.type === 'defect'" class="material-icons icon">assignment</i>
+
+			{{ bug.description }}
+		</p>
+
+	</div>
+
+  </div>
+</div>

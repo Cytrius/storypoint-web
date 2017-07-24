@@ -1,13 +1,14 @@
 import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
+declare var $:any;
 
 @Component({
-    templateUrl:'./dashboard.view.html',
-    styleUrls:['./dashboard.style.scss'],
+    templateUrl:'./projects.view.html',
+    styleUrls:['./projects.style.scss'],
     providers: []
 })
-export class DashboardView {
+export class ProjectsView {
 
 	public projects = [
 		{
@@ -74,17 +75,15 @@ export class DashboardView {
 	) {
 	}
 
-	public showProject() {
-		console.log('showProject()');
-		this.router.navigate(['app', 'projects', 'overview']);
-	}
-
 
     /**
      * Lifecycle - On Init
      */
 	ngOnInit() {
-
+		setTimeout(() => {
+			$(this.element.nativeElement).find('.ui.progress').progress();
+			$(this.element.nativeElement).find('.ui.dropdown').dropdown();
+		});
 	}
 
 }

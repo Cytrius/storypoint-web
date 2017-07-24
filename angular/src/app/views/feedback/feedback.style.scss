@@ -1,0 +1,52 @@
+.ui.huge.input {
+	margin:1em 0 1em 0;
+    border-bottom: 2px solid #dcddde !important;
+    padding-bottom: 0.25em !important;
+    width: 100%;
+    i {
+    	top: -0.25em;
+    }
+}
+
+.right.floated {
+	float:right;
+}
+
+.ui.feedback.segment {
+
+	box-shadow:none;
+	margin: 0 0 1em 0;
+	background:rgba(255, 255, 255, 0.8);
+
+	.ui.edit.button {
+		font-size: .85714286rem;
+		line-height: 1;
+		margin: 0 .14285714em;
+		padding: .5833em .833em;
+		font-weight: 700;
+	}
+
+	.ui.right.floated.label {
+		float:right;
+	}
+
+	.right.floated.actions {
+		float:right;
+
+	}
+
+	p {
+	    font-size: 15px;
+	    font-weight: 300;
+	    line-height: 1.8;
+	    color: #555;
+	    margin:0;
+	}
+
+	p.details {
+		margin-top:1em;
+		padding:0 1.7em 1em 1.7em;
+		display:none;
+		font-size:14px;
+	}
+}

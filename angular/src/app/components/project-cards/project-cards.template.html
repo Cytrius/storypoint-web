@@ -1,13 +1,13 @@
 <div class="ui cards">
 
-    <div *ngFor="let project of projects" class="ui link card">
+    <div *ngFor="let project of projects" class="ui card">
         <div class="content">
             <span class="right floated">
                 <span class="ui small {{ project.status_color }} icon label">
                     {{ project.status }}
                 </span>
             </span>
-            <a class="header">
+            <a class="header" [routerLink]="['/app', 'projects', 'overview']">
                 {{ project.title }}
             </a>
             <div class="meta">
@@ -42,6 +42,10 @@
         <div class="ui bottom attached indicating progress" [attr.data-value]="project.progress" data-total="100">
             <div class="bar"></div>
         </div>
+    </div>
+
+    <div *ngIf="showAddNew" class="ui ghost card">
+        <span class="ui large basic label"><i class="material-icons icon">add</i> Add Project</span>
     </div>
 
 </div>

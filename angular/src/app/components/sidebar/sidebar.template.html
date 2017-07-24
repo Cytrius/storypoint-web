@@ -1,27 +1,30 @@
 <div class="ui left fixed vertical large menu">
+  <a class="item" [routerLink]="['/app', 'personal']" routerLinkActive="active">
+    <i class="material-icons icon">account_circle</i>
+    My Dashboard
+  </a>
   <a class="item" [routerLink]="['/app', 'projects']" routerLinkActive="active">
   	<i class="material-icons icon">layers</i>
     	Projects
       <div class="sub menu">
-        <a class="item" [routerLink]="['/app', 'projects', 'dashboard']" routerLinkActive="active">Overview</a>
-        <a class="item" [routerLink]="['/app', 'projects', 'sprint']" routerLinkActive="active">Sprints</a>
-        <a class="item" [routerLink]="['/app', 'projects', 'resources']" routerLinkActive="active">Resources</a>
-        <a class="item" [routerLink]="['/app', 'projects', 'budget']" routerLinkActive="active">Budgets</a>
+        <a class="item" [routerLink]="['/app', 'projects', 'sprints']" routerLinkActive="active">Sprints</a>
+        <a class="item" [routerLink]="['/app', 'projects', 'team']" routerLinkActive="active">Team</a>
+        <a class="item" [routerLink]="['/app', 'projects', 'budgets']" routerLinkActive="active">Budgets</a>
       </div>
   </a>
-  <a class="item">
+  <a class="item" [routerLink]="['/app', 'feedback']" routerLinkActive="active">
     <i class="material-icons icon">record_voice_over</i>
     Feedback
   </a>
-  <a class="item">
+  <a class="item" [routerLink]="['/app', 'bugs']" routerLinkActive="active">
     <i class="material-icons icon">bug_report</i>
     Bugs
   </a>
-  <a class="item">
+  <a class="item" [routerLink]="['/app', 'reports']" routerLinkActive="active">
   	<i class="material-icons icon">timeline</i>
   	Reports
   </a>
-  <a class="item">
+  <a class="item" [routerLink]="['/app', 'settings']" routerLinkActive="active">
   	<i class="material-icons icon">settings</i>
   	Settings
   </a>

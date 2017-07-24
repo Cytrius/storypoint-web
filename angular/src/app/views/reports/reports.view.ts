@@ -3,11 +3,11 @@ import { Component, ElementRef } from '@angular/core';
 declare var $:any;
 
 @Component({
-    templateUrl:'./project.view.html',
-    styleUrls:['./project.style.scss'],
+    templateUrl:'./reports.view.html',
+    styleUrls:['./reports.style.scss'],
     providers: []
 })
-export class ProjectView {
+export class ReportsView {
 
 	public project = {
 		title:'Project Dashboard',
